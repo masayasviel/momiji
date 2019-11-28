@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AdventCalendarRandomPick</title>
+        <!-- Vue.js を読み込む -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <input type="text" id="name"><input type="button" value="add" onclick="addDate()">
+        <div id="app">
+            <p>{{ pickName }}</p>
+            <button v-on:click="getRandomName">choice</button>
+            <ul>
+                <li v-for="name in names">
+                    {{ name }}
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
